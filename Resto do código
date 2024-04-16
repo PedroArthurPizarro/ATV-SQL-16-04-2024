@@ -1,0 +1,34 @@
+-- Tabela Médicos
+CREATE TABLE Medicos (
+    codigo INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100),
+    especialidade VARCHAR(100),
+    idade INT
+);
+
+INSERT INTO Médicos (nome, especialidade, idade) VALUES
+('Dr. Carlos', 'Cardiologista', 45),
+('Dra. Ana', 'Dermatologista', 38),
+('Dr. Rodrigo', 'Ortopedista', 52),
+('Dra. Fernanda', 'Pediatra', 34),
+('Dr. Gustavo', 'Psiquiatra', 40);
+
+-- Tabela Consultas
+CREATE TABLE Consultas (
+    codigo INT PRIMARY KEY AUTO_INCREMENT,
+    paciente INT,
+    médico INT,
+    data VARCHAR(11),
+    diagnostico VARCHAR(255),
+    tratamento VARCHAR(255),
+);
+
+-- Inserção de dados fictícios na tabela Consultas
+INSERT INTO Consultas (paciente, médico, data, diagnostico, tratamento) VALUES
+(1, 1, '2024-04-15', 'Hipertensão', 'Medicação e acompanhamento'),
+(2, 2, '2024-04-16', 'Eczema', 'Pomada e orientações'),
+(3, 3, '2024-04-17', 'Fratura no tornozelo', 'Cirurgia e fisioterapia'),
+(4, 4, '2024-04-18', 'Febre', 'Antitérmico e repouso'),
+(5, 5, '2024-04-19', 'Depressão', 'Terapia e medicamentos');
+
+-- Justificativa para os comandos e estrutura do banco de dados
