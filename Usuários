@@ -10,7 +10,6 @@ CREATE TABLE Usuarios (
     telefone VARCHAR(20)
 );
 
--- Inserção de dados fictícios
 INSERT INTO Usuarios (nome, endereco, cpf, data_nascimento, email, telefone) VALUES
 ('João Silva', 'Rua A, 123', '123.456.789-00', '1980-05-15', 'joao@example.com', '(11) 98765-4321'),
 ('Maria Santos', 'Avenida B, 456', '987.654.321-00', '1992-10-20', 'maria@example.com', '(22) 12345-6789'),
@@ -66,5 +65,3 @@ INSERT INTO Usuarios (nome, endereco, cpf, data_nascimento, email, telefone) VAL
 ('Gustavo Castro', 'Rua ZZ, 159', '789.123.456-00', '1988-12-31', 'gustavo@example.com', '(77) 80246-3579'),
 ('Bianca Lima', 'Avenida AAA, 753', '654.321.987-00', '1983-02-09', 'bianca@example.com', '(88) 35791-6024'),
 ('Marcela Souza', 'Rua BBB, 753', '321.654.987-00', '1990-05-16', 'marcela@example.com', '(99) 91357-2460');
-
--- Fim da inserção de dados
