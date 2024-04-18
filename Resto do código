@@ -23,12 +23,9 @@ CREATE TABLE Consultas (
     tratamento VARCHAR(255),
 );
 
--- Inserção de dados fictícios na tabela Consultas
 INSERT INTO Consultas (paciente, médico, data, diagnostico, tratamento) VALUES
 (1, 1, '2024-04-15', 'Hipertensão', 'Medicação e acompanhamento'),
 (2, 2, '2024-04-16', 'Eczema', 'Pomada e orientações'),
 (3, 3, '2024-04-17', 'Fratura no tornozelo', 'Cirurgia e fisioterapia'),
 (4, 4, '2024-04-18', 'Febre', 'Antitérmico e repouso'),
 (5, 5, '2024-04-19', 'Depressão', 'Terapia e medicamentos');
-
--- Justificativa para os comandos e estrutura do banco de dados
